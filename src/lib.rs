@@ -1,6 +1,7 @@
-use actix_web::dev::Server;
-use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
 use std::net::TcpListener;
+
+use actix_web::dev::Server;
+use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 
 #[get("/health_check")]
 async fn health_check() -> impl Responder {
