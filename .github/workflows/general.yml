@@ -66,5 +66,6 @@ jobs:
       - name: Run cargo-tarpaulin
         uses: actions-rs/tarpaulin@v0.1
         with:
-          args: '--ignore-tests'
+          version: '0.15.0'
+          args: '-- --test-threads 1'
 
