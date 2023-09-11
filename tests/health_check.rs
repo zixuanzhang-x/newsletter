@@ -1,4 +1,3 @@
-use std::mem::forget;
 use std::net::TcpListener;
 
 fn spawn_app() -> String {
