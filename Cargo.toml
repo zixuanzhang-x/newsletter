@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-name="newsletter"
+name = "newsletter"
 path = "src/lib.rs"
 
 # bin is an array, because we can have only one library in a project, but multiple binaries
@@ -17,9 +17,9 @@ name = "newsletter"
 
 [dependencies]
 actix-web = "4"
+serde = { version = "1.0.188", features = ["derive"] }
 tokio = "1.32"
 
 [dev-dependencies]
 reqwest = "0.11.20"
 tokio = { version = "1.32", features = ["macros"] }
-
